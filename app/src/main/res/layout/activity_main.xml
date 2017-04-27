@@ -13,37 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <GridLayout
-                        android:id="@+id/grd_layout_alfabeto"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <GridView
-                            android:id="@+id/grd_alfabeto"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:numColumns="1"
-                            android:verticalSpacing="10dp"/>
-                    </GridLayout>
-                </RelativeLayout>
-            </ScrollView>
-        </RelativeLayout>
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView

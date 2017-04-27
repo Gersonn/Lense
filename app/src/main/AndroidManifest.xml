@@ -21,10 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TraductorActivity"
-            android:label="@string/title_activity_traductor"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CreditosActivity"></activity>
     </application>
 
 </manifest>

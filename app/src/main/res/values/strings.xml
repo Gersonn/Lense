@@ -1,14 +1,27 @@
 <resources>
     <string name="app_name">Lense</string>
+
+    <string name="menu_action_credits">Créditos</string>
+
     <string name="nav_bottom_home">Inicio</string>
     <string name="nav_bottom_trad">Texto a Señas</string>
     <string name="nav_bottom_senias">Lenguaje Señas</string>
 
 
     <string name="url_mineduc_lenguaje_senias">http://www.mineduc.cl/wp-content/uploads/sites/31/2016/08/DiccionarioSeNasAH.pdf</string>
-    <string name="title_activity_traductor">TraductorActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+
+    <string name="txt_coming_soon">Próximamente!</string>
+
+    <!-- CRÉDITOS -->
+    <string name="txt_tit_autor">Desarrollador:</string>
+    <string name="txt_tit_autor_name">Gerson Díaz</string>
+    <string name="txt_tit_email">Email:</string>
+    <string name="txt_tit_email_name">gersonn.dev@gmail.com</string>
+    <string name="txt_tit_website">Sitio web:</string>
+    <string name="txt_tit_website_name">http://www.gersondiaz.cl/</string>
+    <string name="txt_tit_version">Versión:</string>
+    <string name="txt_tit_version_name">1.0</string>
+    <!-- END CRÉDITOS -->
 
 </resources>
