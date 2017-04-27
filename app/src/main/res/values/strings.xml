@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lense</string>
+    <string name="nav_bottom_home">Inicio</string>
+    <string name="nav_bottom_trad">Texto a Señas</string>
+    <string name="nav_bottom_senias">Lenguaje Señas</string>
+
+
+    <string name="url_mineduc_lenguaje_senias">http://www.mineduc.cl/wp-content/uploads/sites/31/2016/08/DiccionarioSeNasAH.pdf</string>
+    <string name="title_activity_traductor">TraductorActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
