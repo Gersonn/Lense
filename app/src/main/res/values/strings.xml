@@ -11,7 +11,10 @@
     <string name="url_mineduc_lenguaje_senias">http://www.mineduc.cl/wp-content/uploads/sites/31/2016/08/DiccionarioSeNasAH.pdf</string>
 
 
+    <!-- TRADUCTOR -->
     <string name="txt_coming_soon">Próximamente!</string>
+    <string name="txt_tit_trad">Introduzca una palabra (30 caracteres max.)</string>
+    <!-- END TRADUCTOR -->
 
     <!-- CRÉDITOS -->
     <string name="txt_tit_autor">Desarrollador:</string>
@@ -22,6 +25,9 @@
     <string name="txt_tit_website_name">http://www.gersondiaz.cl/</string>
     <string name="txt_tit_version">Versión:</string>
     <string name="txt_tit_version_name">1.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- END CRÉDITOS -->
 
 </resources>

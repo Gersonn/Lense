@@ -5,10 +5,39 @@
     tools:context="cl.ckelar.android.lense.layout.TraductorFragment"
     android:id="@+id/fragmentTraductor">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/txt_coming_soon" />
+        android:padding="10dp">
 
+        <TextView
+            android:id="@+id/txt_tit_trad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/txt_tit_trad" />
+
+        <EditText
+            android:id="@+id/edtTraductor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_tit_trad"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="50"/>
+
+        <FrameLayout
+            android:id="@+id/frmTrad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/edtTraductor">
+
+        </FrameLayout>
+    </RelativeLayout>
 </FrameLayout>

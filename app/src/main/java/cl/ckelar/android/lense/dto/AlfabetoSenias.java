@@ -3,9 +3,11 @@ package cl.ckelar.android.lense.dto;
 import android.content.Context;
 
 /**
- * Created by gedi on 26-04-17.
+ * Clase con métodos auxiliares
+ * @author Gerson Díaz
+ * @version 1.0
+ * Creado el 27/04/2017
  */
-
 public class AlfabetoSenias {
 
     private String nombre;

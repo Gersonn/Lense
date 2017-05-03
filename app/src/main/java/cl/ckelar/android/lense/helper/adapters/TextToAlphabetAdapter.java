@@ -20,33 +20,35 @@ import cl.ckelar.android.lense.dto.AlfabetoSenias;
  * Clase con métodos auxiliares
  * @author Gerson Díaz
  * @version 1.0
- * Creado el 27/04/2017
+ * Creado el 02/05/2017
  */
-public class AlfabetoAdapter extends BaseAdapter {
+public class TextToAlphabetAdapter extends BaseAdapter {
 
     private final String TAG = this.getClass().getName();
     private Context context;
+    private String[] arrayData;
 
-    public AlfabetoAdapter(Context context) {
+    public TextToAlphabetAdapter(Context context, String[] arrayData) {
         this.context = context;
+        this.arrayData = arrayData;
     }
 
     @Override
     public int getCount() {
         //return 0;
-        return AlfabetoSenias.ITEMS.length;
+        return arrayData.length;
     }
 
     @Override
     public Object getItem(int position) {
         //return null;
-        return AlfabetoSenias.ITEMS[position];
+        return arrayData[position];
     }
 
     @Override
     public long getItemId(int position) {
-        //return 0;
-        return Long.parseLong(AlfabetoSenias.ITEMS[position].getId() + "");
+        return 0;
+        //return Long.parseLong(arrayData[position] + "");
     }
 
     @Override
@@ -65,9 +67,22 @@ public class AlfabetoAdapter extends BaseAdapter {
         Bitmap mIcon = null;
         try {
 
-            final AlfabetoSenias alfabeto_letra = (AlfabetoSenias) getItem(position);
+            //final AlfabetoSenias alfabeto_letra = (AlfabetoSenias) getItem(position);
 
-            InputStream in = assetManager.open(alfabeto_letra.getImgAssets());
+            //InputStream in = assetManager.open(alfabeto_letra.getImgAssets());
+            String alfabeto_letra = (String) getItem(position);
+
+            Log.d(TAG, "La letra encontrada es: " + alfabeto_letra);
+
+            String path = "alfabeto/" + alfabeto_letra + ".png";
+
+            if (path.contains(" ")) {
+                //path.replace(" ", "_");
+                path = "alfabeto/_.png";
+                Log.d(TAG, "reemplazo de espacio: " + path);
+            }
+
+            InputStream in = assetManager.open(path);
             mIcon = BitmapFactory.decodeStream(in);
         } catch (Exception e) {
             Log.e(TAG, e.getMessage());
@@ -80,4 +95,6 @@ public class AlfabetoAdapter extends BaseAdapter {
         return convertView;
 
     }
+
+
 }
