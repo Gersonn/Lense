@@ -15,7 +15,7 @@ public class ValidatorUtil {
      * **/
     public static boolean isLettersOnly(String text) {
 
-        String pattern= "^[a-zA-Z _]*$";
+        String pattern= "^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]*$";
         return text.matches(pattern);
 
     }

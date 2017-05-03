@@ -15,6 +15,7 @@ import java.io.InputStream;
 
 import cl.ckelar.android.lense.R;
 import cl.ckelar.android.lense.dto.AlfabetoSenias;
+import cl.ckelar.android.lense.helper.Util;
 
 /**
  * Clase con métodos auxiliares
@@ -72,15 +73,19 @@ public class TextToAlphabetAdapter extends BaseAdapter {
             //InputStream in = assetManager.open(alfabeto_letra.getImgAssets());
             String alfabeto_letra = (String) getItem(position);
 
+            alfabeto_letra = alfabeto_letra.toLowerCase();
+            alfabeto_letra = alfabeto_letra.toLowerCase();
+            alfabeto_letra = alfabeto_letra.replace("á", "a");
+            alfabeto_letra = alfabeto_letra.replace("é", "e");
+            alfabeto_letra = alfabeto_letra.replace("í", "i");
+            alfabeto_letra = alfabeto_letra.replace("ó", "o");
+            alfabeto_letra = alfabeto_letra.replace("ú", "u");
+            alfabeto_letra = alfabeto_letra.replace("ñ", "enie");
+            alfabeto_letra = alfabeto_letra.replace(" ", "_");
+
             Log.d(TAG, "La letra encontrada es: " + alfabeto_letra);
 
             String path = "alfabeto/" + alfabeto_letra + ".png";
-
-            if (path.contains(" ")) {
-                //path.replace(" ", "_");
-                path = "alfabeto/_.png";
-                Log.d(TAG, "reemplazo de espacio: " + path);
-            }
 
             InputStream in = assetManager.open(path);
             mIcon = BitmapFactory.decodeStream(in);
