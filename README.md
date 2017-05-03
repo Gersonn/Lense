@@ -1,6 +1,6 @@
 # Lense
 
-Lense es una aplicación para android (en desarrollo) que permite conocer el alfabeto del lenguaje de señas de Chile 
+Lense es una aplicación para android que permite conocer el alfabeto del lenguaje de señas de Chile 
 y deletrear palabras ilustradas en imagenes. Por otra parte, permite descargar el diccionario del lenguaje 
 de señas, del sitio web del Mineduc.
 
